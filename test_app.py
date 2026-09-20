@@ -4,7 +4,7 @@ def test_home():
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Hello from Automated CI/CD!" in response.data
+    assert b"Hello from Automated CI/CD! V1" in response.datapy
 
 def test_health():
     client = app.test_client()
